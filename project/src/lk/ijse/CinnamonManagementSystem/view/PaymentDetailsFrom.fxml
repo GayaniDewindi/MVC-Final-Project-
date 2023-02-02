@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CinnamonManagementSystem.controller.PaymentDetailsFromController">
+   <children>
+      <ComboBox layoutX="112.0" layoutY="80.0" prefWidth="150.0" />
+      <ComboBox layoutX="374.0" layoutY="80.0" prefWidth="150.0" />
+      <Label layoutX="46.0" layoutY="84.0" text="Sup NIC:" />
+      <Label layoutX="317.0" layoutY="84.0" text="Cus Id:" />
+   </children>
+</AnchorPane>

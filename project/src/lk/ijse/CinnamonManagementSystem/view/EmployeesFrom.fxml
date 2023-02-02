@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="551.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CinnamonManagementSystem.controller.EmployeesFromController">
+    <children>
+        <JFXButton buttonType="RAISED" layoutX="597.0" layoutY="251.0" onAction="#btnDeleteOnAction" prefHeight="31.0" prefWidth="66.0" style="-fx-background-color: #ff3838;" text="Delete" textFill="#141313">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="685.0" layoutY="252.0" onAction="#btnRemoveOnAction" style="-fx-background-color: #e74c3c;" text="CLEAR" textFill="#1b1919">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </JFXButton>
+        <TextField fx:id="txtId" layoutX="38.0" layoutY="100.0" onKeyPressed="#enterKeyPressedOnAction" prefHeight="33.0" prefWidth="310.0" promptText="Employees Id*" />
+        <TextField fx:id="txtName" layoutX="445.0" layoutY="100.0" prefHeight="33.0" prefWidth="303.0" promptText="Employees Name*" />
+        <TextField fx:id="txtAddress" layoutX="38.0" layoutY="184.0" prefHeight="31.0" prefWidth="310.0" promptText="Employees Address*" />
+        <TextField fx:id="txtContact" layoutX="445.0" layoutY="184.0" prefHeight="33.0" prefWidth="294.0" promptText="Contact*" />
+        <Label layoutX="38.0" layoutY="75.0" opacity="0.74" text="Employees Id*" />
+        <Label layoutX="445.0" layoutY="75.0" opacity="0.74" text="Empoyees Name*" />
+        <Label layoutX="38.0" layoutY="158.0" opacity="0.74" text="Employee Address*" />
+        <Label layoutX="445.0" layoutY="158.0" opacity="0.74" text="Contact*" />
+        <JFXTabPane layoutX="160.0" layoutY="367.0" />
+        <TableView fx:id="tblEmployee" layoutX="14.0" layoutY="333.0" prefHeight="195.0" prefWidth="704.0">
+            <columns>
+                <TableColumn fx:id="colID" prefWidth="71.0" text="ID" />
+                <TableColumn fx:id="colName" prefWidth="173.0" text="Name" />
+                <TableColumn fx:id="colAddress" minWidth="0.0" prefWidth="168.0" text="Address" />
+                <TableColumn fx:id="colContact" prefWidth="141.0" text="Contact" />
+                <TableColumn fx:id="colNic" prefWidth="158.0" text="NIC" />
+            </columns>
+        </TableView>
+        <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="564.0" layoutY="297.0" onKeyPressed="#btnSearchOnActin" prefHeight="30.0" prefWidth="164.0" promptText="Search">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></JFXTextField>
+        <Label layoutX="36.0" layoutY="233.0" opacity="0.74" text="Employee NIC*" />
+        <TextField fx:id="txtNic" layoutX="38.0" layoutY="266.0" prefHeight="31.0" prefWidth="310.0" promptText="Emaill*" />
+        <JFXButton buttonType="RAISED" layoutX="492.0" layoutY="252.0" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #ffa502;" text="Update" textFill="#1b1a1a">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="403.0" layoutY="252.0" onAction="#btnAddOnAction" prefHeight="31.0" prefWidth="66.0" style="-fx-background-color: #3498db;" text="Save" textFill="#1b1a1a">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </JFXButton>
+      <AnchorPane layoutY="1.0" opacity="0.84" prefHeight="56.0" prefWidth="761.0" style="-fx-background-color: #6D214F;">
+         <children>
+              <Label layoutX="252.0" layoutY="7.0" prefHeight="42.0" prefWidth="251.0" text="Employees Details" textFill="#171616">
+                  <font>
+                      <Font name="System Bold Italic" size="29.0" />
+                  </font>
+              </Label>
+              <JFXButton buttonType="RAISED" layoutX="20.0" layoutY="11.0" onAction="#btnBackOnAction" prefHeight="33.0" prefWidth="66.0" style="-fx-background-color: #bdc3c7;" text="Back">
+                  <cursor>
+                      <Cursor fx:constant="HAND" />
+                  </cursor>
+              </JFXButton>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

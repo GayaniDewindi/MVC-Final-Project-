@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="25fabece-7bcf-4e3a-a448-8daf0c10edf2">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (7)"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM Customer]]>
+	</queryString>
+	<field name="cus_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="cus_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="cus_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="cus_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="cus_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="cus_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="address" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="address"/>
+		<property name="com.jaspersoft.studio.field.label" value="address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="mobile" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="mobile"/>
+		<property name="com.jaspersoft.studio.field.label" value="mobile"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="email" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="email"/>
+		<property name="com.jaspersoft.studio.field.label" value="email"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="nic" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nic"/>
+		<property name="com.jaspersoft.studio.field.label" value="nic"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<group name="cus_id">
+		<groupExpression><![CDATA[$F{cus_id}]]></groupExpression>
+	</group>
+	<group name="cus_name">
+		<groupExpression><![CDATA[$F{cus_name}]]></groupExpression>
+	</group>
+	<group name="address">
+		<groupExpression><![CDATA[$F{address}]]></groupExpression>
+	</group>
+	<group name="mobile">
+		<groupExpression><![CDATA[$F{mobile}]]></groupExpression>
+	</group>
+	<group name="email">
+		<groupExpression><![CDATA[$F{email}]]></groupExpression>
+	</group>
+	<group name="nic">
+		<groupExpression><![CDATA[$F{nic}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="350" y="50" width="113" height="30" uuid="8f9837f6-72fe-4865-81d5-554daee0b332"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="470" y="50" width="100" height="30" uuid="7fc9edf2-e94e-4484-9df4-43a1a4bf24f8"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="140" y="0" width="300" height="44" uuid="aa4d4781-d39f-4e95-acdb-09dd285cb0ff"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[New Lanka Cinnamon Pvt]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="0" width="130" height="77" uuid="cb1104ae-2b5c-40c1-b96f-12a6291e39ba"/>
+				<imageExpression><![CDATA["G:/SemesterFinalProjectCinnamon/project/src/lk/ijse/CinnamonManagementSystem/assests/logo/images.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="47" splitType="Stretch">
+			<staticText>
+				<reportElement x="200" y="8" width="160" height="32" forecolor="#910E0C" uuid="cf271315-9d95-4b4a-a294-d5583f867930"/>
+				<textElement>
+					<font fontName="Serif" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Customer Details]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="95" height="30" uuid="ae46f300-da71-4f38-8af1-e5778198a92e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="96effcf1-7daf-42c8-8107-48e8307f5283"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Serif" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="0" width="92" height="30" uuid="67f4989a-439f-426e-bbf4-337bc30a09cb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1fdafdc8-bf3d-4879-83bd-86a407aa97dd"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Serif" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="187" y="0" width="92" height="30" uuid="d3f270b4-7a33-47a2-874f-bd7d95b150a3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="92a2f8cb-1201-40cd-83be-5586d8c5d56c"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Serif" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="92" height="30" uuid="c424b9ad-0868-4a03-a3ab-32a65cfbae31">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="04f04e0b-b060-46c5-b260-f68aa226f241"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Serif" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mobile]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="371" y="0" width="92" height="30" uuid="82c6d5d5-b43a-4faa-b9f3-afb45ac2634b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2e9cf893-ae5c-4a1f-8b58-c1db2ae7efaa"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Serif" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="463" y="0" width="92" height="30" uuid="fa76b112-fc84-47cf-9f56-fcf4f14b1f6e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a78951bb-723d-404e-82ff-1399e690008c"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Serif" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nic]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="80" height="30" uuid="4d913d0a-688d-4957-b91d-36cd100570a1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="96effcf1-7daf-42c8-8107-48e8307f5283"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cus_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="95" y="0" width="92" height="30" uuid="056a315e-cefa-4a32-9649-7631555190bb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1fdafdc8-bf3d-4879-83bd-86a407aa97dd"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Serif" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cus_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="0" width="92" height="30" uuid="44f6247a-3582-4514-ac12-26514e9c249a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="92a2f8cb-1201-40cd-83be-5586d8c5d56c"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Serif" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="92" height="30" uuid="8070ef92-077c-4116-a076-a4bbca5d2973">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="04f04e0b-b060-46c5-b260-f68aa226f241"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Serif" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mobile}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="371" y="0" width="79" height="30" uuid="c9d630cd-c072-431c-8f3d-efe90e24e247">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2e9cf893-ae5c-4a1f-8b58-c1db2ae7efaa"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Serif" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="0" width="75" height="30" uuid="6e57df38-e1b1-4eb7-9246-ec9b90548467">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a78951bb-723d-404e-82ff-1399e690008c"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Serif" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nic}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="260" y="0" width="100" height="30" uuid="6d6bf16a-8168-4834-b4a8-71b889ee68ef"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[END..]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

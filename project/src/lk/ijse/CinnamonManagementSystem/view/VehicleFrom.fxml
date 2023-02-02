@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="594.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CinnamonManagementSystem.controller.VehicleFromController">
+   <children>
+      <Label layoutX="273.0" layoutY="14.0" prefHeight="49.0" prefWidth="256.0" text="Vehicle Details">
+         <font>
+            <Font name="System Bold Italic" size="33.0" />
+         </font></Label>
+      <Label layoutX="8.0" layoutY="174.0" text="Vehicle_No:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="478.0" layoutY="163.0" text="Brand:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="115.0" text="Emp_id:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="67.0" layoutY="299.0" onAction="#btnAddOnAction" prefHeight="30.0" prefWidth="85.0" style="-fx-background-color: #3867d6;" text="Add">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="213.0" layoutY="297.0" onAction="#btnSearchOnActio" prefHeight="44.0" prefWidth="92.0" style="-fx-background-color: #3867d6;" text="Search">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="344.0" layoutY="297.0" onAction="#btnUpdateOnAction" prefHeight="44.0" prefWidth="103.0" style="-fx-background-color: #3867d6;" text="Update">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="498.0" layoutY="297.0" onAction="#btnDeteleOnAction" prefHeight="44.0" prefWidth="92.0" style="-fx-background-color: #ff3838;" text="Detele">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtBrand" layoutX="570.0" layoutY="165.0" prefHeight="25.0" prefWidth="209.0" />
+      <ComboBox fx:id="cmbEmpid" layoutX="106.0" layoutY="118.0" onAction="#combOnAction" prefWidth="150.0" />
+      <Label layoutX="460.0" layoutY="103.0" text="Emplyoee Name:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicle" layoutX="135.0" layoutY="177.0" prefHeight="25.0" prefWidth="209.0" />
+      <Label layoutX="23.0" layoutY="225.0" text="Fuel Used:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsed" layoutX="135.0" layoutY="225.0" prefHeight="25.0" prefWidth="209.0" />
+      <Label layoutX="444.0" layoutY="210.0" text="Engine CC:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEngineCC" layoutX="570.0" layoutY="213.0" prefHeight="25.0" prefWidth="209.0" />
+      <TableView fx:id="tblVehicle" layoutX="123.0" layoutY="368.0" prefHeight="177.0" prefWidth="557.0">
+        <columns>
+            <TableColumn fx:id="tblVehicleNo" prefWidth="99.0" text="Vehicle No" />
+            <TableColumn fx:id="tblBrand" prefWidth="171.0" text="Brand" />
+            <TableColumn fx:id="tblFuelUsed" prefWidth="136.0" text="Fuel_Used" />
+            <TableColumn fx:id="tblEngineCC" prefWidth="150.0" text="Engine CC" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="287.0" layoutY="108.0" onAction="#EmpNewOnAction" prefHeight="44.0" prefWidth="92.0" style="-fx-background-color: #3867d6;" text="new">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="txtEmpName" layoutX="635.0" layoutY="110.0" prefHeight="17.0" prefWidth="100.0" text="name" />
+      <JFXButton layoutX="629.0" layoutY="291.0" onAction="#btnClearOnAction" prefHeight="44.0" prefWidth="92.0" style="-fx-background-color: #ff3838;" text="Clear">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

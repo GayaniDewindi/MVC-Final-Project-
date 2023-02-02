@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane2" prefHeight="650.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CinnamonManagementSystem.controller.ManageDetailsFormController">
+   <children>
+      <VBox layoutY="243.0" prefHeight="403.0" prefWidth="185.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#btnCustomerOnAction" prefHeight="61.0" prefWidth="185.0" style="-fx-background-color: #0c2461;" text="Customer" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnSupplierOnAction" prefHeight="39.0" prefWidth="229.0" style="-fx-background-color: #0c2461;" text="Supplier" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="10.0" layoutY="54.0" mnemonicParsing="false" onAction="#btnEmployeesOnAction" prefHeight="39.0" prefWidth="229.0" style="-fx-background-color: #0c2461;" text="Employees" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="10.0" layoutY="142.0" mnemonicParsing="false" onAction="#btnItemOnAction" prefHeight="39.0" prefWidth="229.0" style="-fx-background-color: #0c2461;" text="Item" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="10.0" layoutY="230.0" mnemonicParsing="false" onAction="#btnVehicelOnAction" prefHeight="39.0" prefWidth="229.0" style="-fx-background-color: #0c2461;" text="Vehicel" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="10.0" layoutY="98.0" mnemonicParsing="false" onAction="#btnOrderOnAction" prefHeight="39.0" prefWidth="229.0" style="-fx-background-color: #0c2461;" text="Order" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="10.0" layoutY="318.0" mnemonicParsing="false" onAction="#btnReportOnAction" prefHeight="61.0" prefWidth="185.0" style="-fx-background-color: #0c2461;" text="Report" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <JFXButton onAction="#btnLogOutOnAction" prefHeight="79.0" prefWidth="185.0" style="-fx-background-color: #0c2461;" text="Log Out" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Pane fx:id="pane" accessibleRole="DECREMENT_BUTTON" layoutX="188.0" layoutY="72.0" prefHeight="578.0" prefWidth="760.0">
+         <children>
+            <AnchorPane layoutY="6.0" prefHeight="200.0" prefWidth="947.0">
+               <children>
+                  <ImageView fitHeight="211.0" fitWidth="313.0" layoutX="8.0">
+                     <image>
+                        <Image url="@../assests/logo/download%20(1).jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="211.0" fitWidth="298.0" layoutX="350.0" layoutY="1.0">
+                     <image>
+                        <Image url="@../assests/logo/images.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="211.0" fitWidth="281.0" layoutX="32.0" layoutY="256.0">
+               <image>
+                  <Image url="@../assests/logo/images%20(2).png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <ImageView fitHeight="159.0" fitWidth="197.0" layoutX="-3.0">
+         <image>
+            <Image url="@../assests/logo/images.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="160.0" prefHeight="83.0" prefWidth="185.0" style="-fx-background-color: #bdc3c7;">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="89.0" layoutX="48.0" layoutY="9.0">
+               <image>
+                  <Image url="@../assests/logo/dashbord.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="190.0" layoutY="4.0" prefHeight="66.0" prefWidth="760.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="606.0" layoutY="17.0">
+               <image>
+                  <Image url="@../assests/logo/images%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="28.0" layoutX="670.0" layoutY="17.0">
+               <image>
+                  <Image url="@../assests/logo/download.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="txtDate" layoutX="14.0" layoutY="14.0" prefHeight="39.0" prefWidth="174.0" text="Date" textFill="#d70d0d">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtTime" layoutX="302.0" layoutY="14.0" prefHeight="39.0" prefWidth="124.0" text="Time" textFill="#d70d0d">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
